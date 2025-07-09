@@ -1,0 +1,650 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kingsukh Guest House</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="animations.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans bg-white text-gray-800">
+    <header
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('assets/images/baranti.webp')"
+    >
+      <div class="bg-black bg-opacity-50 h-full w-full">
+        <nav class="flex items-center justify-between px-6 py-4">
+          <h1 class="text-white text-2xl font-bold">
+            <a href="#">Kingsukh Guest House</a>
+          </h1>
+          <ul class="hidden md:flex space-x-6 text-white font-semibold">
+            <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+            <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+            <li>
+              <a href="#service" class="hover:text-yellow-300">Services</a>
+            </li>
+            <li><a href="#rooms" class="hover:text-yellow-300">Rooms</a></li>
+            <li>
+              <a href="#gallery" class="hover:text-yellow-300">Gallery</a>
+            </li>
+            <li>
+              <a href="#booking" class="hover:text-yellow-300">Booking</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-yellow-300">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile Hamburger -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+              <i class="ri-menu-line text-3xl"></i>
+            </button>
+          </div>
+
+          <!-- Mobile Dropdown -->
+          <div
+            id="mobile-menu"
+            class="absolute top-16 left-0 w-full bg-black bg-opacity-80 text-white text-center hidden flex-col space-y-4 py-6 md:hidden z-50"
+          >
+            <a href="#home" class="block hover:text-yellow-300">Home</a>
+            <a href="#about" class="block hover:text-yellow-300">About</a>
+            <a href="#service" class="block hover:text-yellow-300">Services</a>
+            <a href="#rooms" class="block hover:text-yellow-300">Rooms</a>
+            <a href="#gallery" class="block hover:text-yellow-300">Gallery</a>
+            <a href="#booking" class="block hover:text-yellow-300">Booking</a>
+            <a href="#contact" class="block hover:text-yellow-300">Contact</a>
+          </div>
+          <a href="https://wa.link/at5ion">
+            <button
+              class="bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-2 rounded shadow transition duration-300 transform hover:scale-105"
+            >
+              Book Now
+            </button>
+          </a>
+        </nav>
+
+        <div
+          class="flex flex-col items-center justify-center h-full text-center px-4"
+        >
+          <p class="text-white text-lg mb-4">Simple - Unique - Friendly</p>
+          <h2 class="text-4xl md:text-6xl text-white font-bold leading-tight">
+            Make Yourself At Home <br />
+            In Our <span class="text-yellow-400">Guest House</span>.
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" data-animate class="py-16 bg-gray-100">
+      <div
+        class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <img
+            src="assets/images/out.jpg"
+            alt="Guest House View"
+            class="rounded-lg shadow-md w-full h-auto"
+          />
+        </div>
+        <div>
+          <h3 class="text-yellow-500 text-sm uppercase font-semibold mb-2">
+            About Us
+          </h3>
+          <h2 class="text-3xl font-bold mb-4 text-gray-800">
+            The Best Holidays Start Here!
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Embark on a tranquil journey at Kingsukh Guest House, nestled near
+            the scenic Baranti Hill and Baranti Lake. Enjoy the comfort of cozy
+            rooms, delectable cuisine, and a peaceful garden environment.
+            Whether you're exploring Biharinath, Susunia, Joychandi, or Panchat
+            Dam – every experience here is memorable.
+          </p>
+          <p class="text-gray-600 mb-4">
+            Address:
+            <a
+              href="https://maps.app.goo.gl/7wYUEB4tvR7NMHbcA"
+              class="text-blue-500 underline"
+              >Beside Barshal Water Tank, Manpur, Barhanti, West Bengal
+              723156</a
+            ><br />
+            Contact:
+            <a href="tel:+919007062180" class="text-blue-500 underline"
+              >+91 9007062180</a
+            >
+          </p>
+          <a href="https://wa.link/at5ion">
+            <button
+              class="mt-4 bg-yellow-400 hover:bg-yellow-300 text-black px-5 py-2 rounded shadow"
+            >
+              Book Now
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS SECTION -->
+    <section
+      id="rooms"
+      data-animate
+      class="bg-gray-50 py-16 px-4 md:px-8 lg:px-16"
+    >
+      <div class="max-w-7xl mx-auto text-center mb-12">
+        <p class="text-sm text-gray-500 uppercase">Our Living Room</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          The Most Memorable Rest Time Starts Here.
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        <!-- Room 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl hover:scale-[1.01] ">
+          <img
+            src="assets/images/small.jpg"
+            alt="Cozy Haven Room"
+            class="w-full h-60 object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Cozy Haven Room
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Escape to comfort in our Cozy Haven Room, a snug retreat designed
+              for intimate relaxation.
+            </p>
+            <p class="text-gray-800 font-semibold mb-4">
+              Starting from <span class="text-green-600">Rs. 1000/night</span>
+            </p>
+            <a href="https://wa.link/at5ion" target="_blank">
+              <button
+                class="bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700 transition"
+              >
+                Book Now
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-2xl hover:scale-[1.01]">
+          <img
+            src="assets/images/large.jpg"
+            alt="Spacious Serenity Suite"
+            class="w-full h-60 object-cover hover:scale-105 transition-transform duration-300 ease-in-out "
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Spacious Serenity Suite
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Indulge in luxury and ample space in our Spacious Serenity Suite,
+              where tranquility meets roomy elegance.
+            </p>
+            <p class="text-gray-800 font-semibold mb-4">
+              Starting from <span class="text-green-600">Rs. 1500/night</span>
+            </p>
+            <a href="https://wa.link/at5ion" target="_blank">
+              <button
+                class="bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700 transition"
+              >
+                Book Now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section
+      id="services"
+      data-animate
+      class="bg-white py-16 px-4 md:px-8 lg:px-16"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div>
+          <img
+            src="assets/images/service.jpg"
+            alt="Our Services"
+            class="rounded-xl shadow-lg w-full hover:scale-105 transition-transform duration-300 ease-in-out "
+          />
+        </div>
+
+        <!-- Content -->
+        <div>
+          <p class="text-sm text-gray-500 uppercase mb-2">Services</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Strive Only For The Best
+          </h2>
+          <ul class="space-y-4 text-gray-700 text-base">
+            <li class="flex items-center gap-3">
+              <i class="ri-shield-star-line text-green-600 text-xl"></i>
+              High Class Security
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="ri-24-hours-line text-green-600 text-xl"></i>
+              24 Hours Room Service
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="ri-restaurant-2-fill text-green-600 text-xl"></i>
+              Restaurant Facility
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="ri-map-2-line text-green-600 text-xl"></i>
+              Tourist Guide Support
+            </li>
+          </ul>
+          <a href="https://wa.link/at5ion" target="_blank">
+            <button
+              class="mt-8 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+            >
+              Book Now
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="bg-gray-50 py-16 px-4 md:px-8 lg:px-16">
+      <div class="max-w-7xl mx-auto text-center mb-12">
+        <p class="text-sm text-gray-500 uppercase">Gallery</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          Explore Nearby Attractions
+        </h2>
+        <p class="text-gray-600 mt-2">
+          Discover the scenic beauty around Kingsukh Guest House
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto"
+      >
+        <div class="overflow-hidden rounded-xl shadow-md">
+          <img
+            src="assets/images/ayodhya.webp"
+            alt="Ayodhya Hills"
+            class="w-full h-60 object-cover hover:scale-105 transition duration-300 ease-in-out "
+          />
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-md">
+          <img
+            src="assets/images/baranti.webp"
+            alt="Baranti Lake"
+            class="w-full h-60 object-cover hover:scale-105 transition duration-300 ease-in-out"
+          />
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-md">
+          <img
+            src="assets/images/flower.jpg"
+            alt="Garden Flower"
+            class="w-full h-60 object-cover hover:scale-105 transition duration-300 ease-in-out"
+          />
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-md">
+          <img
+            src="assets/images/mithonDam.webp"
+            alt="Maithon Dam"
+            class="w-full h-60 object-cover hover:scale-105 transition duration-300 ease-in-out"
+          />
+        </div>
+        <div class="overflow-hidden rounded-xl shadow-md">
+          <img
+            src="assets/images/palash.webp"
+            alt="Palash Blossom"
+            class="w-full h-60 object-cover hover:scale-105 transition duration-300 ease-in-out"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM SECTION -->
+    <section id="booking" class="bg-white py-16 px-4 md:px-8 lg:px-16">
+      <div class="max-w-4xl mx-auto text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Book Your Stay
+        </h2>
+        <p class="text-gray-600">
+          Fill in the details and we’ll get back to you shortly!
+        </p>
+      </div>
+
+      <form
+        class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-100 p-8 rounded-xl shadow-md"
+        action="mailto:kkghosh0099@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            placeholder="Your name"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            placeholder="you@example.com"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2"
+            >Phone Number</label
+          >
+          <input
+            type="tel"
+            name="phone"
+            required
+            class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            placeholder="+91 90070xxxxx"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2"
+            >Room Type</label
+          >
+          <select
+            name="room"
+            class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          >
+            <option>Cozy Haven Room</option>
+            <option>Spacious Serenity Suite</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2"
+            >Check-in Date</label
+          >
+          <input
+            type="date"
+            name="checkin"
+            required
+            class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2"
+            >Check-out Date</label
+          >
+          <input
+            type="date
+            name="checkout"
+            required
+            class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="block text-gray-700 font-semibold mb-2"
+            >Additional Message</label
+          >
+          <textarea
+            name="message"
+            rows="4"
+            class="w-full px-4 py-2 rounded border focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            placeholder="Any special requests..."
+          ></textarea>
+        </div>
+
+        <div class="md:col-span-2 text-center">
+          <button
+            type="submit"
+            class="bg-yellow-400 hover:bg-yellow-300 text-black px-8 py-3 rounded shadow font-semibold transition"
+          >
+            Submit Booking
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section
+      id="contact"
+      data-animate
+      class="bg-white py-16 px-4 md:px-8 lg:px-16"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div>
+          <img
+            src="assets/images/recep.jpg"
+            alt="Reception"
+            class="rounded-xl shadow-lg w-full"
+          />
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Contact Us
+          </h2>
+          <p class="text-gray-600 mb-6">
+            We’re happy to help! Reach out to us for bookings, questions, or
+            support.
+          </p>
+
+          <div class="space-y-4 text-gray-700 text-base">
+            <!-- Address -->
+            <div class="flex items-start gap-3">
+              <img
+                src="assets/images/location.png"
+                alt="Location"
+                class="w-6 h-6 mt-1"
+              />
+              <span
+                >Beside Barshal Water Tank, Manpur, Barhanti, West Bengal
+                723156</span
+              >
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-center gap-3">
+              <img src="assets/images/call.png" alt="Call" class="w-6 h-6" />
+              <a
+                href="tel:+919007062180"
+                class="hover:text-green-600 transition"
+                >+91 9007062180</a
+              >
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center gap-3">
+              <img src="assets/images/mail.png" alt="Mail" class="w-6 h-6" />
+              <a
+                href="mailto:kkghosh0099@gmail.com"
+                class="hover:text-green-600 transition"
+                >kkghosh0099@gmail.com</a
+              >
+            </div>
+
+            <!-- Socials -->
+            <div class="flex items-center gap-4 mt-4">
+              <a href="#"
+                ><img
+                  src="assets/images/facebook.png"
+                  alt="Facebook"
+                  class="w-6 h-6 hover:scale-110 transition"
+              /></a>
+              <a
+                href="https://www.instagram.com/kingsukhguesthouse/"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/instagram.png"
+                  alt="Instagram"
+                  class="w-6 h-6 hover:scale-110 transition"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  src="assets/images/youtube.png"
+                  alt="YouTube"
+                  class="w-6 h-6 hover:scale-110 transition"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/twitter.png"
+                  alt="Twitter"
+                  class="w-6 h-6 hover:scale-110 transition"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAP SECTION -->
+    <section class="w-full h-[400px]">
+      <iframe
+        class="w-full h-full border-0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1822.1167396129632!2d86.8377888!3d23.6223526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71ba48ed8a431%3A0x67eec5cc8ea983fd!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1720524182642!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
+    <!-- FOOTER -->
+    <footer
+      data-animate
+      class="bg-gray-900 text-white py-12 px-4 md:px-8 lg:px-16"
+    >
+    
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10"
+      >
+        <!-- Logo & Description -->
+        <div>
+          <h4 class="text-xl font-bold mb-4">Kingsukh Guest House</h4>
+          <p class="text-sm text-gray-300">
+            Discover comfort and scenic beauty near Baranti Hill and Dam. A
+            relaxing escape amidst Purulia’s nature.
+          </p>
+          <a href="https://wa.link/at5ion">
+            <button
+              class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 rounded-md text-sm font-semibold transition"
+            >
+              BOOK NOW
+            </button>
+          </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-300 text-sm">
+            <li><a href="#rooms" class="hover:text-white">Rooms & Rates</a></li>
+            <li>
+              <a href="#service" class="hover:text-white">Our Services</a>
+            </li>
+            <li><a href="#gallery" class="hover:text-white">Gallery</a></li>
+            <li>
+              <a href="#contact" class="hover:text-white">Contact Info</a>
+            </li>
+            <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+            <li>
+              <a href="#booking" class="hover:text-yellow-300">Booking</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+          <ul class="space-y-2 text-gray-300 text-sm">
+            <li>24x7 Room Service</li>
+            <li>Tourist Guide Support</li>
+            <li>Restaurant & Dining</li>
+            <li>Security & Clean Rooms</li>
+            <li>Local Travel Assistance</li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+          <ul class="text-sm text-gray-300 space-y-3">
+            <li>
+              <span class="block">📍 Beside Barshal Water Tank,</span>
+              <span class="block">Manpur, Barhanti, West Bengal 723156</span>
+            </li>
+            <li>
+              📞
+              <a href="tel:+919007062180" class="hover:text-white"
+                >+91 9007062180</a
+              >
+            </li>
+            <li>
+              📧
+              <a href="mailto:kkghosh0099@gmail.com" class="hover:text-white"
+                >kkghosh0099@gmail.com</a
+              >
+            </li>
+            <li class="flex gap-4 mt-3">
+              <a href="#"
+                ><img
+                  src="assets/images/facebook.png"
+                  alt="Facebook"
+                  class="w-6 h-6 hover:scale-110 transition"
+              /></a>
+              <a
+                href="https://www.instagram.com/kingsukhguesthouse/"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/instagram.png"
+                  alt="Instagram"
+                  class="w-6 h-6 hover:scale-110 transition"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  src="assets/images/youtube.png"
+                  alt="YouTube"
+                  class="w-6 h-6 hover:scale-110 transition"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/images/twitter.png"
+                  alt="Twitter"
+                  class="w-6 h-6 hover:scale-110 transition"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm"
+      >
+        © 2024 Kingsukh Guest House. All rights reserved.
+      </div>
+    </footer>
+    
+
+    <script src="animations.js" defer></script>
+  </body>
+</html>
